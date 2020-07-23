@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+nav {
+    font-family: 'Rozha One', serif;
+    height: 80px;
+    width: 100%;
+    font-size: 30px;
+    padding-top: 30px;
+
+}
+
+.logo {
+    line-height: 80px;
+    padding: 0 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    word-spacing: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 80px;
+}
+
+.active a:hover {
+    background-color: blueviolet;
+}
