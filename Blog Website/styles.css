@@ -7,11 +7,15 @@
 
 }
 
+body {
+    padding-bottom: 50px;
+}
+
 nav {
     font-family: 'Rozha One', serif;
     height: 80px;
     width: 100%;
-    font-size: 30px;
+    font-size: 20px;
     padding-top: 30px;
 
 }
@@ -33,6 +37,40 @@ nav ul li {
     margin: 0 80px;
 }
 
-.active a:hover {
-    background-color: blueviolet;
+.homeimage {
+    width: 35%;
+    height: 35%;
+    float: right;
+    margin-right: 6.9%;
+    /*box-shadow: 10px 10px 5px #707070;*/
+}
+
+.upperfold {
+
+    padding-top: 80px;
+}
+
+.firstwords {
+    padding-left: 80px;
+    padding-top: 15%;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    text-transform: lowercase;
+    
+}
+
+.firstwords1 {
+    padding-top: 40%;
+    float: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: lowercase;
+}
+
+br {
+    display: block;
+    margin: -8px 0;
 }
