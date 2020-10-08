@@ -53,14 +53,15 @@ nav ul {
 nav ul li {
     display: inline-block;
     line-height: 80px;
-    margin: 0 80px;
+    margin: 0 40px;
 }
 
 .homeimage {
     width: 35%;
     height: 35%;
     padding-right: 80px;
-    float: right;
+    float: right;  
+    /*media query to remove pic after a certain size*/
     /*box-shadow: 10px 10px 5px #707070;*/
 }
 
@@ -117,4 +118,9 @@ p {
 .blogp {
     /* margin-right: 6.9%; */
     padding-top: 20px;
+}
+
+.blogImage {
+    width: 100%;
+    height: 100%;
 }
