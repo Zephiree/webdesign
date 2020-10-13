@@ -11,16 +11,14 @@ body {
     padding-bottom: 50px;
 }
 
-.darkmode {
-    background-color: #292929;
-    color: white
-}
 
 .mainWrapper {
     max-width: 900px;
     padding: 20px;
+    padding-top: 50px;
     margin: 0 auto;
 }
+
 
 .blogContainer {
     padding-top: 50px;
@@ -29,24 +27,55 @@ body {
     margin-bottom: 20px;
 }
 
-nav {
-    font-family: 'Rozha One', serif;
-    height: 80px;
-    width: 100%;
-    font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.upperfoldContainer {
+    padding-top: 50px;
+    padding: 25px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    
+}
 
+hr {
+    text-align: center;
 }
 
 .logo {
-    line-height: 80px;
-    padding: 0 80px;
+    text-decoration: none !important;
+    font-family: 'ivypresto-display', serif;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    font-size: 200%;
+    color: black;
+
+}
+
+.caption {
+    font-family: 'ivypresto-display', serif;
+    font-weight: 400;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.subtitle {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    color: black;
+    padding-bottom: 40px;
 }
 
 nav ul {
     float: right;
-    /* margin-right: 20px; */
+    margin-right: 80px;
     word-spacing: 20px;
 }
 
@@ -55,39 +84,10 @@ nav ul li {
     line-height: 80px;
     margin: 0 40px;
 }
-
-.homeimage {
-    width: 35%;
-    height: 35%;
-    padding-right: 80px;
-    float: right;  
-    /*media query to remove pic after a certain size*/
-    /*box-shadow: 10px 10px 5px #707070;*/
-}
-
-.upperfold {
-
-    padding-top: 80px;
-}
-
-.firstwords {
-    padding-left: 80px;
-    padding-top: 15%;
-    float: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 36px;
-    text-transform: lowercase;
-    
-}
-
-.firstwords1 {
-    padding-top: 40%;
-    float: left;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    text-transform: lowercase;
+.headerImage {
+    padding-top: 5%;
+    padding-bottom: 100px;
+    width: 100%;
 }
 
 br {
@@ -97,15 +97,17 @@ br {
 
 
 h1 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 600;
     font-size: 30px;
+    padding-bottom: 10px;
 }
 
 h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
     font-weight: 400;
+    padding-bottom: 10px;
 }
 
 p { 
@@ -115,12 +117,115 @@ p {
     font-size: 15px;
 }
 
-.blogp {
-    /* margin-right: 6.9%; */
-    padding-top: 20px;
-}
 
 .blogImage {
     width: 100%;
     height: 100%;
+}
+
+/* ADJUST ROWS HERE (DEPENDING ON HEIGHT OF IMAGES) */
+
+.rowContainer {
+    max-width: 900px;
+    height: 300px;
+    padding: 20px;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.rowContainer2 {
+    max-width: 900px;
+    height: 540px;
+    padding: 20px;
+    padding-top: 50px;
+    margin: 0 auto;
+
+}
+
+/* ADJUST COLUMNS HERE (DEPENDING ON AMOUNT OF IMAGES) */
+
+.column3 {
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    padding-bottom: 60px;
+  }
+  
+
+.column3 img {
+opacity: 0.8;
+cursor: pointer;
+}
+
+.column3 img:hover {
+opacity: 1;
+}
+
+.column2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-bottom: 60px;
+  }
+  
+
+.column2 img {
+opacity: 0.8;
+cursor: pointer;
+}
+
+.column2 img:hover {
+opacity: 1;
+}
+
+
+@media screen and (max-width: 588px) {
+
+    .subtitle {
+        font-family: 'Red Hat Display', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        display: flex;
+        justify-content: center;
+        font-size: 100%;
+        color: black;
+        padding-bottom: 50px;
+    }
+
+    .logo {
+        text-decoration: none !important;
+        font-family: 'ivypresto-display', serif;
+        font-weight: 600;
+        font-style: normal;
+        display: flex;
+        justify-content: center;
+        font-size: 300%;
+        padding-top:80px;
+        color: black;
+    }
+
+    .caption {
+        font-family: 'ivypresto-display', serif;
+        font-weight: 400;
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        font-size: 180%;
+        color: black;
+    }
+
+    .headerImage {
+        padding-top: 20%;
+        padding-bottom: 40%;
+        width: 100%;
+    }
+
+    .rowContainer {
+        display: none
+    }
+    .rowContainer2 {
+        display: none
+    }
+
+
 }
